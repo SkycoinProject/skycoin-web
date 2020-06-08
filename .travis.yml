@@ -39,11 +39,11 @@ addons:
 install:
   - nvm install 10.15
   - nvm use 10.15
-  - if [[ ! -d "$GOPATH/src/github.com/skycoin/skycoin-web" ]]; then
+  - if [[ ! -d "$GOPATH/src/github.com/skycoinproject/skycoin-web" ]]; then
     mkdir -p $GOPATH/src/github.com/skycoin;
-    ln -s $TRAVIS_BUILD_DIR $GOPATH/src/github.com/skycoin/skycoin-web;
+    ln -s $TRAVIS_BUILD_DIR $GOPATH/src/github.com/skycoinproject/skycoin-web;
     fi
-  - cd $GOPATH/src/github.com/skycoin/skycoin-web
+  - cd $GOPATH/src/github.com/skycoinproject/skycoin-web
   - make install-deps-ui
 
 
@@ -65,7 +65,7 @@ script:
 
 notifications:
   email:
-    - travis@skuycoin.net
+    - travis@skycoin.com
   # https://github.com/kvld/travisci-telegram TravisCI Telegram Bot integration
   webhooks: https://fathomless-fjord-24024.herokuapp.com/notify
 
@@ -80,5 +80,5 @@ deploy:
   acl: public_read
   region: $AWS_REGION
   on:
-    repo: skycoin/skycoin-web
+    repo: skycoinproject/skycoin-web
     tags: true

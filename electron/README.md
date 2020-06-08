@@ -9,7 +9,7 @@ A recent version of Go (golang) and NPM 3 or higher. The installation of Go and 
 
 ### Go installation
 
-You can find more information at [Golang 1.10+ Installation/Setup](https://github.com/skycoin/skycoin/blob/develop/INSTALLATION.md)
+You can find more information at [Golang 1.10+ Installation/Setup](https://github.com/skycoinproject/skycoin/blob/develop/INSTALLATION.md)
 
 ### NPM installation
 
